@@ -57,33 +57,6 @@ flutter run
 flutter test
 ```
 
-
-
-
-
-## Patrones y Técnicas Implementadas
-
-### 1. Manejo de Estado
-- **Provider**: Para gestión de estado global de las tareas
-- **ChangeNotifier**: Para notificar cambios a los widgets
-
-### 2. Persistencia
-- **SharedPreferences**: Almacenamiento local de tareas en formato JSON
-- **Métodos async/await**: Manejo adecuado de operaciones asíncronas
-
-### 3. Navegación
-- **Navigator 2.0**: Navegación entre pantallas
-- **Rutas nombradas**: Para navegación clara y mantenible
-
-### 4. Widgets
-- **StatelessWidget**: Para componentes sin estado
-- **StatefulWidget**: Para componentes con estado local
-- **ListView.builder**: Para listas eficientes
-
-### 5. Validaciones
-- **Form y TextFormField**: Validación de campos de formulario
-- **GlobalKey<FormState>**: Control del estado del formulario
-
 ## Funcionalidades Detalladas
 
 ### Pantalla Principal (Home)
@@ -114,27 +87,19 @@ flutter test
 
 ## Decisiones de Diseño
 
-### 1. Arquitectura
-Se eligió una arquitectura por capas para mantener la separación de responsabilidades:
-- **Models**: Entidades de datos
-- **Services**: Lógica de negocio y persistencia
-- **Providers**: Gestión de estado
-- **Screens**: Páginas completas
-- **Widgets**: Componentes reutilizables
-
-### 2. Manejo de Estado
+### 1. Manejo de Estado
 Se utilizó Provider por:
 - Simplicidad y curva de aprendizaje suave
 - Integración nativa con Flutter
 - Excelente rendimiento
 - Código boilerplate mínimo
 
-### 3. Persistencia
+### 2. Persistencia
 
 Se utilizó **SQLite** como mecanismo de almacenamiento local debido a que permite manejar datos estructurados de forma eficiente dentro de la aplicación.
 
 
-### 4. UI/UX
+### 3. UI/UX
 - Material Design 3
 - Colores consistentes
 - Animaciones suaves
@@ -144,12 +109,11 @@ Se utilizó **SQLite** como mecanismo de almacenamiento local debido a que permi
 ## Pruebas Implementadas
 
 ### Pruebas Unitarias
-- ✅ Modelo Task: serialización/deserialización
-- ✅ TaskStorageService: guardado y carga de tareas
+- TaskDAO: operaciones de base de datos (insertar, obtener, actualizar y eliminar tareas)
+- Modelo Task: serialización y deserialización de datos
 
 ### Pruebas de Widget
-- ✅ TaskListItem: renderizado correcto
-- ✅ Interacciones de usuario
+- TaskListItem: renderizado correcto de cada tarea en la lista
 
 
 ## Notas de Implementación
