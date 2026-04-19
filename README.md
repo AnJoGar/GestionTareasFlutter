@@ -11,7 +11,7 @@ TaskBoard es una aplicación móvil desarrollada en Flutter que permite gestiona
 - ✅ Editar tareas existentes
 - ✅ Marcar tareas como completadas/pendientes
 - ✅ Filtros: Todas, Pendientes, Completadas
-- ✅ Persistencia local con SharedPreferences
+- ✅ Persistencia local con SQL Lite
 - ✅ Búsqueda por título (extra)
 - ✅ Pantalla de detalles de tarea (extra)
 - ✅ Animaciones al agregar/eliminar (extra)
