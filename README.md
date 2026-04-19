@@ -135,8 +135,5 @@ Se utilizó **SQLite** como mecanismo de almacenamiento local debido a que permi
 Este proyecto es una prueba técnica para evaluación de conocimientos en Flutter.
 
 
-## Preguntas teóricas
-
-
 
 
