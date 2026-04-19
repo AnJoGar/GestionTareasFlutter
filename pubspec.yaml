@@ -1,0 +1,28 @@
+name: task_board
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.1 <4.0.0' # He ajustado esto para que sea más flexible y acepte Dart 3.x
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  uuid: ^4.5.2
+  shared_preferences: ^2.5.4
+  provider: ^6.1.5+1
+  intl: ^0.20.2
+  sqflite: ^2.3.0 # Eliminé la línea repetida de 'dependencies:' que tenías aquí
+  path: ^1.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0 # Ajustado a una versión más estándar para Flutter 3.x
+  sqflite_common_ffi: ^2.3.0+2
+flutter:
+  uses-material-design: true
